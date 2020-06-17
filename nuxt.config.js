@@ -23,7 +23,8 @@ export default {
   ** Global CSS
   */
   css: [
-    'tachyons/css/tachyons.css'
+    '@/assets/css/colors.css',
+    '@/assets/css/main.scss'
   ],
   /*
   ** Plugins to load before mounting the App
@@ -35,6 +36,7 @@ export default {
   */
   buildModules: [
     '@nuxt/typescript-build',
+    '@nuxtjs/color-mode'
   ],
   /*
   ** Nuxt.js modules
