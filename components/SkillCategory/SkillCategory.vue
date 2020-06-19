@@ -1,0 +1,93 @@
+<template>
+  <div class="skill-category">
+    <h3 class="skill-header">{{header}}</h3>
+    <font-awesome-icon :icon="headerIcon" class="icon" size="3x"/>
+    <div class="skill-category-details">
+      <div class="skill-category-icons">
+        <font-awesome-icon
+          :icon="icon"
+          :key="index"
+          class="icon"
+          size="2x"
+          v-for="(icon, index) in icons"/>
+        <!--        <img v-for="(icon,index) in customIcons"-->
+        <!--             class="icon"-->
+        <!--             :key="index"-->
+        <!--             :src="icon"-->
+        <!--             width="32" alt="icon">-->
+        <component :is="extraIcons[icon]"
+                   :key="index"
+                   class="icon extra-icon"
+                   v-for="(icon,index) in customIcons"/>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+  import SpringLogo from "~/assets/icons/spring.svg";
+  import ElasticsearchLogo from "~/assets/icons/elasticsearch.svg";
+  export default {
+    name: "SkillCategory",
+    props: {
+      header: {
+        type: String,
+        required: true
+      },
+      headerIcon: {
+        type: Array,
+        required: true
+      },
+      icons: {
+        type: Array,
+        required: true
+      },
+      customIcons: {
+        type: Array
+      }
+    },
+    data() {
+      return {
+        extraIcons: {
+          spring: SpringLogo,
+          elasticsearch: ElasticsearchLogo
+        }
+      }
+    }
+  }
+</script>
+
+<style lang="scss" scoped>
+  .skill {
+    &-category {
+      width: 300px;
+
+      &:hover {
+        background-color: var(--category-hover-bg);
+      }
+
+      &:not(:last-child) {
+        border-right: 1px solid var(--border-color);
+      }
+
+      &-header {
+        margin: 20px auto 10px;
+      }
+
+      &-icons {
+        margin: 20px 0;
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .icon {
+        fill:var(--header-color) ;
+        color: var(--header-color);
+        &.extra-icon{
+          width: 32px;
+          height: 35px;
+        }
+      }
+    }
+  }
+</style>

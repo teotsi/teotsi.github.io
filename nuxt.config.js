@@ -23,6 +23,7 @@ export default {
   ** Global CSS
   */
   css: [
+    '@fortawesome/fontawesome-svg-core/styles.css',
     '@/assets/css/colors.css',
     '@/assets/css/main.scss'
   ],
@@ -30,6 +31,7 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
+    '~/plugins/fontawesome.js'
   ],
   /*
   ** Nuxt.js dev-modules
@@ -59,6 +61,18 @@ export default {
     ** You can extend webpack config here
     */
     extend (config, ctx) {
+      const svgRule = config.module.rules.find(rule => rule.test.test('.svg'));
+
+      svgRule.test = /\.(png|jpe?g|gif|webp)$/;
+
+      config.module.rules.push({
+        test: /\.svg$/,
+        use: [
+          'babel-loader',
+          'vue-svg-loader',
+        ],
+      });
+
     }
   }
 }
