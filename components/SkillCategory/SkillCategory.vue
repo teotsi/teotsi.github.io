@@ -16,9 +16,9 @@
         <!--             :src="icon"-->
         <!--             width="32" alt="icon">-->
         <component :is="extraIcons[icon]"
-                   :key="index"
+                   :key="icon.toString()"
                    class="icon extra-icon"
-                   v-for="(icon,index) in customIcons"/>
+                   v-for="icon in customIcons"/>
       </div>
     </div>
   </div>
@@ -60,7 +60,7 @@
 <style lang="scss" scoped>
   .skill {
     &-category {
-      width: 300px;
+      width: 100%;
 
       &:hover {
         background-color: var(--category-hover-bg);
@@ -75,7 +75,7 @@
       }
 
       &-icons {
-        margin: 20px 0;
+        padding: 20px 0;
         display: flex;
         justify-content: space-around;
       }

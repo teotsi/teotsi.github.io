@@ -1,8 +1,9 @@
 <template>
   <div class="container">
     <h1 class="title">Thodoris Tsigkanos</h1>
-    <p class="subtitle">I am a CS student
-      <a class="aueb-link" href="https://www.aueb.gr" target="_blank">@AUEB.</a> I like making stuff too,
+    <p class="subtitle">Hi! I am a CS student
+      <a class="aueb-link" href="https://www.aueb.gr" target="_blank">@AUEB,</a> a Full Stack Developer
+      and overall CS enthusiast. I like making stuff too,
       either with my hands or with IDEs. I play the guitar.</p>
     <h2>Skills</h2>
     <div class="skill-container">
@@ -22,6 +23,7 @@
   export default {
     components: {SkillCategory},
     data() {
+      console.log('👀');
       return {
         categories: {
           frontend: {
@@ -53,7 +55,8 @@
             icons: [
               ['fab', 'java'],
               ['fab', 'python'],
-              ['fab', 'bootstrap'],
+              ['fab', 'android'],
+              ['fas', 'network-wired'],
             ]
           }
         }
@@ -79,10 +82,10 @@
 
   .aueb-link {
     text-decoration: none;
-    color: #762124;
-
+    color: var(--header-color);
+    background-color: rgba(239, 173, 176, 0.4);
     &:hover {
-      color: #a55257;
+      background: rgba(118, 33, 36, 0.3);
     }
   }
 </style>
