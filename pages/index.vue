@@ -14,6 +14,7 @@
                       :custom-icons="category.customIcons"
                       v-for="(category,name) in categories"/>
     </div>
+    <p class="subtitle">Check out my <nuxt-link prefetch to="/projects/">Projects</nuxt-link> page.</p>
   </div>
 </template>
 
@@ -83,9 +84,10 @@
   .aueb-link {
     text-decoration: none;
     color: var(--header-color);
-    background-color: rgba(239, 173, 176, 0.4);
+    background-color: rgba(239, 173, 176, 0.15);
     &:hover {
-      background: rgba(118, 33, 36, 0.3);
+      color: var(--aueb-hover-color);
+      background: rgba(118, 33, 36,1);
     }
   }
 </style>

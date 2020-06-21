@@ -44,3 +44,12 @@ h3{
   background: var(--selection-bg);
   color: var(--selection-color);
 }
+
+a{
+  text-decoration: none;
+  background-color: var(--link-bg-color);
+  color: var(--header-color);
+  &:hover{
+    background-color: var(--link-bg-hover-color);
+  }
+}

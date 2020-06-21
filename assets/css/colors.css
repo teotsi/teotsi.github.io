@@ -10,6 +10,10 @@
   --nav-color: #1eb69f;
   --header-color:#35495e;
   --category-hover-bg: #bbbbbb;
+  --icon-hover-color: #13202b;
+  --aueb-hover-color: #ffffff;
+  --link-bg-color: rgba(65, 179, 138, 0.3);
+  --link-bg-hover-color: rgb(72, 201, 155);
 }
 
 .dark-mode {
@@ -24,6 +28,10 @@
   --nav-color: #142639;
   --header-color: #a2b1bf;
   --category-hover-bg: #253d53;
+  --icon-hover-color: #c5d2db;
+  --aueb-hover-color: #d2d9dc;
+  --link-bg-color: rgba(65, 179, 138, 0.1);
+  --link-bg-hover-color: rgb(33, 94, 73);
 }
 .sepia-mode {
   --color: #433422;

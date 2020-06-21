@@ -83,8 +83,14 @@
       .icon {
         fill:var(--header-color) ;
         color: var(--header-color);
+        &:hover{
+          fill:var(--icon-hover-color) ;
+          color: var(--icon-hover-color);
+          transform: scale(1.1);
+        }
+
         &.extra-icon{
-          width: 32px;
+          width: 35px;
           height: 35px;
         }
       }
