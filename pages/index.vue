@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <h1 class="title">Thodoris Tsigkanos</h1>
+    <logo text="Thodoris Tsigkanos"/>
     <p class="subtitle">Hi! I am a CS student
       <a class="aueb-link" href="https://www.aueb.gr" target="_blank">@AUEB,</a> a Full Stack Developer
       and overall CS enthusiast. I like making stuff too,
@@ -21,8 +21,9 @@
 <script lang="ts">
 
   import SkillCategory from "~/components/SkillCategory/SkillCategory.vue";
+  import Logo from "~/components/Logo/Logo.vue";
   export default {
-    components: {SkillCategory},
+    components: {Logo, SkillCategory},
     data() {
       console.log('👀');
       return {
