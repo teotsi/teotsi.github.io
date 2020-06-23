@@ -21,12 +21,17 @@ body {
   display: block;
   color: var(--header-color);
   letter-spacing: 1px;
+  font-weight: 300;
 }
 
 .title {
-  font-weight: 300;
   font-size: 80px;
 }
+
+.subtitle {
+  font-size: 21px;
+}
+
 
 h2 {
   font-weight: 500;

@@ -77,10 +77,6 @@
     justify-content: space-between;
   }
 
-  .subtitle {
-    font-size: 21px;
-  }
-
   .aueb-link {
     text-decoration: none;
     color: var(--header-color);
