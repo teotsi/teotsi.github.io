@@ -61,13 +61,9 @@
   .skill {
     &-category {
       width: 100%;
-
+      max-width: 480px;
       &:hover {
         background-color: var(--category-hover-bg);
-      }
-
-      &:not(:last-child) {
-        border-right: 1px solid var(--border-color);
       }
 
       &-header {
@@ -79,6 +75,11 @@
         display: flex;
         justify-content: space-around;
       }
+    }
+  }
+  @media (min-width:700px) {
+    .skill-category:not(:last-child) {
+      border-right: 1px solid var(--border-color);
     }
   }
 </style>

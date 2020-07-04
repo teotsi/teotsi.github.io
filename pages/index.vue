@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <logo text="Thodoris Tsigkanos"/>
+    <banner>Thodoris Tsigkanos</banner>
     <p class="subtitle">Hi! I am a CS student
       <a class="aueb-link" href="https://www.aueb.gr" target="_blank">@AUEB,</a> a Full Stack Developer
       and overall CS enthusiast. I like making stuff too,
@@ -18,12 +18,12 @@
   </div>
 </template>
 
-<script lang="ts">
+<script>
 
   import SkillCategory from "~/components/SkillCategory/SkillCategory.vue";
-  import Logo from "~/components/Logo/Logo.vue";
+  import Banner from "../components/Logo/Banner";
   export default {
-    components: {Logo, SkillCategory},
+    components: {Banner, SkillCategory},
     data() {
       console.log('👀');
       return {
@@ -73,9 +73,10 @@
     grid-column: 2/3;
   }
 
-  .skill-container {
+  .skill-container{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 
   .aueb-link {
@@ -85,6 +86,13 @@
     &:hover {
       color: var(--aueb-hover-color);
       background: rgba(118, 33, 36,1);
+    }
+  }
+
+  @media (min-width: 700px) {
+    .skill-container {
+      justify-content: space-between;
+      flex-wrap: nowrap;
     }
   }
 </style>
