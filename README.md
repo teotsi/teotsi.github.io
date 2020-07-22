@@ -1,7 +1,8 @@
 # nuxt-gh
 
-> personal website in Nuxt!
+[![Build Status](https://travis-ci.com/teotsi/teotsi.github.io.svg?branch=dev)](https://travis-ci.com/teotsi/teotsi.github.io)
 
+My personal portfolio using Nuxt.js and Github Pages 🎸
 ## Build Setup
 
 ```bash
