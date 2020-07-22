@@ -17,7 +17,7 @@ body {
   background-color: var(--bg);
 }
 
-.title, .subtitle {
+.title, .subtitle,.subtitle-muted {
   display: block;
   color: var(--header-color);
   letter-spacing: 1px;
@@ -30,6 +30,11 @@ body {
 
 .subtitle {
   font-size: 21px;
+}
+
+.subtitle-muted{
+  font-size: 16px;
+  color: var(--header-color-muted);
 }
 
 

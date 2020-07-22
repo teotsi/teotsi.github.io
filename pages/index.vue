@@ -5,6 +5,8 @@
       <a class="aueb-link" href="https://www.aueb.gr" target="_blank">@AUEB,</a> a Full Stack Developer
       and overall CS enthusiast. I like making stuff too,
       either with my hands or with IDEs. I play the guitar.</p>
+    <p class="subtitle-muted">This site is a work in progress. Built using <a href="https://vuejs.org/" target="_blank">Vue.js</a>,
+      along with <a href="https://nuxtjs.org/" target="_blank">Nuxt.js</a></p>
     <h2>Skills</h2>
     <div class="skill-container">
       <skill-category :header=category.header

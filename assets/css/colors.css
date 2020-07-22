@@ -14,6 +14,7 @@
   --aueb-hover-color: #ffffff;
   --link-bg-color: rgba(65, 179, 138, 0.3);
   --link-bg-hover-color: rgb(122, 196, 168);
+  --header-color-muted: rgb(92, 92, 92);
 }
 
 .dark-mode {
@@ -32,6 +33,7 @@
   --aueb-hover-color: #d2d9dc;
   --link-bg-color: rgba(65, 179, 138, 0.1);
   --link-bg-hover-color: rgb(33, 94, 73);
+  --header-color-muted: #5a6671;
 }
 .sepia-mode {
   --color: #433422;

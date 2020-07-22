@@ -1,7 +1,7 @@
 <template>
   <div class="project-wrapper">
     <h2>Projects</h2>
-    <p class="subtitle">Below is an up-to-date list of my Github projects using the Github API. </p>
+    <p class="subtitle">Below is an up-to-date list of my Github projects using the Github API(v3). </p>
     <div class="project-previews-wrapper">
       <project-preview :key="project.id"
                        :project="project"

@@ -46,8 +46,12 @@
       display: flex;
       justify-content: space-evenly;
     }
-  }
-  a{
-    padding: 14.5px;
+    a{
+      padding: 14.5px;
+      background-color: inherit;
+      &:hover{
+        background-color: var(--link-bg-hover-color);
+      }
+    }
   }
 </style>
