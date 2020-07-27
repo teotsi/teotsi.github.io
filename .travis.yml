@@ -14,7 +14,7 @@ branches:
 
 install:
   - npm install
-  - npm run generate
+  - nuxt build && nuxt export
 
 script:
   - echo "Skipping tests"
