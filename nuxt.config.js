@@ -41,7 +41,6 @@ export default {
   ** Nuxt.js dev-modules
   */
   buildModules: [
-    '@nuxt/typescript-build',
     '@nuxtjs/color-mode'
   ],
   /*

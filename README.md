@@ -3,6 +3,7 @@
 [![Build Status](https://travis-ci.com/teotsi/teotsi.github.io.svg?branch=dev)](https://travis-ci.com/teotsi/teotsi.github.io)
 
 My personal portfolio using Nuxt.js and Github Pages 🎸
+Check out the `.travis.yml` file to see how you can export an actually static website using Nuxt.
 ## Build Setup
 
 ```bash
@@ -19,5 +20,3 @@ $ npm run start
 # generate static project
 $ npm run generate
 ```
-
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).

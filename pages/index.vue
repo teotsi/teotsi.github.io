@@ -36,6 +36,7 @@
             icons: [
               ['fab', 'js-square'],
               ['fab', 'vuejs'],
+              ['fab', 'react'],
               ['fab', 'bootstrap'],
               ['fab', 'sass'],
             ],
