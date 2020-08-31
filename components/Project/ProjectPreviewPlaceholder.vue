@@ -24,7 +24,7 @@ export default {
     width: 16px;
     height: 16px;
     border-radius: 50%;
-    background: #fff;
+    background: var(--project-placeholder-color);
     animation: lds-grid 1.2s linear infinite;
 
     &:nth-child(1) {

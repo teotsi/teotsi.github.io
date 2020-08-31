@@ -6,6 +6,7 @@
     <div class="social-container">
       <social-badge name="npm" url="https://www.npmjs.com/~teotsi"/>
       <social-badge name="github" url="https://www.github.com/teotsi"/>
+      <social-badge name="linkedin" url="https://www.linkedin.com/in/theodore-tsigkanos-7b271090/"/>
     </div>
   </div>
 </template>
