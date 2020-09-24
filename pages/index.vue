@@ -2,9 +2,9 @@
   <div class="container">
     <banner>Thodoris Tsigkanos</banner>
     <p class="subtitle">Hi! I am a CS student
-      <a class="aueb-link" href="https://www.aueb.gr" target="_blank">@AUEB,</a> a Full Stack Developer
+      <red-link href="https://www.aueb.gr">@AUEB,</red-link> a Full Stack Developer
       and overall CS enthusiast. I like making stuff too,
-      either with my hands or with IDEs. I play the guitar.</p>
+      either with my hands or with IDEs. I play the guitar. I'm currently a Software Engineer <red-link href="https://www.linkedin.com/company/asianlogic-ltd.---bayview-technologies/">@AsianLogic</red-link>.</p>
     <p class="subtitle-muted">This site is a work in progress. Built using <a href="https://vuejs.org/" target="_blank">Vue.js</a>,
       along with <a href="https://nuxtjs.org/" target="_blank">Nuxt.js</a> for the generation of actually static pages.</p>
     <h2>Skills</h2>
@@ -24,8 +24,9 @@
 
   import SkillCategory from "~/components/SkillCategory/SkillCategory.vue";
   import Banner from "../components/Logo/Banner";
+  import RedLink from "@/components/RedLink/RedLink";
   export default {
-    components: {Banner, SkillCategory},
+    components: {RedLink, Banner, SkillCategory},
     data() {
       console.log('👀');
       return {
@@ -80,16 +81,6 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-  }
-
-  .aueb-link {
-    text-decoration: none;
-    color: var(--header-color);
-    background-color: rgba(239, 173, 176, 0.15);
-    &:hover {
-      color: var(--aueb-hover-color);
-      background: rgba(118, 33, 36,1);
-    }
   }
 
   @media (min-width: 700px) {
