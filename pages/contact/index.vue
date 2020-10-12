@@ -12,19 +12,33 @@
 </template>
 
 <script>
-    import SocialBadge from "../../components/SocialBadge/SocialBadge";
-    export default {
-        name: "index",
-      components: {SocialBadge}
+import SocialBadge from "../../components/SocialBadge/SocialBadge";
+
+export default {
+  name: "index",
+  components: {SocialBadge},
+  head() {
+    return {
+      title: "Contact me",
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Contact page for teotsi'
+        }
+      ]
     }
+  }
+}
 </script>
 
 <style scoped>
-  .contact-container{
-    grid-column: 2/3;
-  }
-  .social-container{
-    display: flex;
-    justify-content: space-evenly;
-  }
+.contact-container {
+  grid-column: 2/3;
+}
+
+.social-container {
+  display: flex;
+  justify-content: space-evenly;
+}
 </style>

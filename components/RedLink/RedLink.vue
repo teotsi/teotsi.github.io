@@ -1,5 +1,5 @@
 <template>
-  <a :href="href" class="red-link" target="_blank">
+  <a :href="href" class="red-link" rel="noopener" target="_blank">
     <slot/>
   </a>
 </template>

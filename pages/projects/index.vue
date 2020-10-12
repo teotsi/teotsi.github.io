@@ -21,6 +21,19 @@ import ProjectPreviewPlaceholder from "~/components/Project/ProjectPreviewPlaceh
 export default {
   name: "index",
   components: {ProjectPreviewPlaceholder, ProjectPreview},
+  head(){
+    return {
+      title: "teotsi's Projects",
+      meta: [
+        // hid is used as unique identifier. Do not use `vmid` for it as it will not work
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'A lit of projects hosted on Github.'
+        }
+      ]
+    }
+  },
   data() {
     return {
       projects: []
