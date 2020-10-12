@@ -16,6 +16,7 @@ import {faNodeJs} from "@fortawesome/free-brands-svg-icons/faNodeJs";
 import {faAws} from "@fortawesome/free-brands-svg-icons/faAws";
 import {faJava} from "@fortawesome/free-brands-svg-icons/faJava";
 import {faAndroid} from "@fortawesome/free-brands-svg-icons/faAndroid";
+import {faHtml5} from "@fortawesome/free-brands-svg-icons/faHtml5";
 import {faNetworkWired} from "@fortawesome/free-solid-svg-icons/faNetworkWired";
 import {faNpm} from "@fortawesome/free-brands-svg-icons/faNpm";
 import {faGithub} from "@fortawesome/free-brands-svg-icons/faGithub";
@@ -28,6 +29,6 @@ config.autoAddCss = false
 // can add other styles or just individual icons.
 library.add(faDesktop, faTools, faCode, faMoon, faSun)
 library.add(faJsSquare, faVuejs, faReact, faBootstrap, faSass, faPython, faNodeJs, faAws, faJava, faAndroid,
-  faNetworkWired, faNpm, faGithub, faLinkedin)
+  faHtml5, faNetworkWired, faNpm, faGithub, faLinkedin)
 // Register the component globally
 Vue.component('font-awesome-icon', FontAwesomeIcon)

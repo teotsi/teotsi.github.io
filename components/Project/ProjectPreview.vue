@@ -1,6 +1,6 @@
 <template>
   <a :href="project.url" class="project-preview-container">
-    <h4 class="preview-header">{{ project.name }}</h4>
+    <h3 class="preview-header">{{ project.name }}</h3>
     <p class="preview-description">{{ project.description }}</p>
     <div class="project-preview-lang-details">
       <p>{{ project.language }}</p>
