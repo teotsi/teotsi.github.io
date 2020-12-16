@@ -2,7 +2,7 @@
   <div class="container">
     <banner>Thodoris Tsigkanos</banner>
     <p class="subtitle">Hi! I am a CS student
-      <red-link href="https://www.aueb.gr">@AUEB,</red-link>
+      <red-link href="https://www.aueb.gr">@AUEB</red-link>,
       a Full Stack Developer
       and overall CS enthusiast. I like making stuff too,
       either with my hands or with IDEs. I play the guitar. I'm currently a Software Engineer

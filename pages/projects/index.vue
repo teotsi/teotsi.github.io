@@ -29,7 +29,7 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: 'A lit of projects hosted on Github.'
+          content: 'A list of projects hosted on Github.'
         }
       ]
     }
