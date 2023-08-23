@@ -1,9 +1,9 @@
 # nuxt-gh
 
-[![Build Status](https://travis-ci.com/teotsi/teotsi.github.io.svg?branch=dev)](https://travis-ci.com/teotsi/teotsi.github.io)
+![Build Status](https://github.com/teotsi/teotsi.github.io/actions/workflows/nuxtjs.yml/badge.svg)
 
 My personal portfolio using Nuxt.js and Github Pages 🎸
-Check out the `.travis.yml` file to see how you can export an actually static website using Nuxt.
+
 ## Build Setup
 
 ```bash
@@ -18,5 +18,5 @@ $ npm run build
 $ npm run start
 
 # generate static project
-$ npm run generate
+$ npm run export
 ```
