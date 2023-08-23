@@ -1,5 +1,5 @@
 <template>
-  <a :href="project.url" class="project-preview-container">
+  <a :href="project.html_url" class="project-preview-container" target="_blank">
     <h3 class="preview-header">{{ project.name }}</h3>
     <p class="preview-description">{{ project.description }}</p>
     <div class="project-preview-lang-details">
